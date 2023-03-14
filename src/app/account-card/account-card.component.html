@@ -1,0 +1,48 @@
+<div class="custom_row container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="info">
+                    <h4>Ledger Balance:</h4>
+                    <p>{{ ledgerBalance }} {{ currency }}</p>
+                </div>
+                <div class="info">
+                    <h4>Blockades</h4>
+                    <p>{{ blockades }} {{ currency }}</p>
+                </div>
+                <br>
+                <div class="info">
+                    <h3>Available funds</h3>
+                    <h2>{{ availableFunds }} {{ currency }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="custom-width">
+                    <div class="info">
+                        <h4>Account number:</h4>
+                        <div class="custom-row">
+                            <p>{{ accountNumber }}</p>
+                            <button (click)="copy(accountNumber)"><img id="copyImg" src="assets/copy-icon.png" alt="copy account number" height="15px"></button>
+                            <button><img id="shareImg" src="assets/share.png" alt="share account number" height="15px"></button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4>Account IBAN:</h4>
+                        <div class="custom-row">
+                            <p>{{ accountIban }}</p>
+                            <button (click)="copy(accountIban)"><img id="copyImg" src="assets/copy-icon.png" alt="copy account IBAN" height="15px"></button>
+                            <button (click)="copy(accountIban)"><img id="shareImg" src="assets/share.png" alt="share account IBAN" height="15px"></button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="custom-row">
+                        <h4>Show account details</h4>
+                        <button id="downloadBtn" (click)="downloadAccountDetails()"><img src="assets/arrow-down.png" alt="download account details" height="20px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
