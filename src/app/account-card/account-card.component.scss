@@ -33,10 +33,21 @@ h3 {
     font-size: large;
 }
 
+#card1 h3 {
+    font-weight: bold;
+}
+
 h4 {
     font-size: medium;
-    color: grey;
     margin: 0;
+}
+
+#card1 h4 {
+    color: grey;
+}
+
+#card2 h4 {
+    font-weight: bold;
 }
 
 p {
@@ -53,6 +64,7 @@ p {
 .custom-row {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 0;
 }
 
@@ -62,7 +74,7 @@ button {
     width: 25px;
     background-color: black;
     border: 0;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 button:hover {
