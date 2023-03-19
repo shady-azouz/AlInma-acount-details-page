@@ -1,35 +1,73 @@
-<div class="main-card flex-column">
-    <div class="flex-row" id="row1">
-        <div class="flex-column">
-            <h4>Total balance</h4>
-            <div class="flex-row">
-                <h2 id="whole-value">12,500,500</h2>
-                <h2 id="decimal-value">.33</h2>
-                <div class="currency-card">
-                    <h3>SAR</h3>
-                    <button id="dropdown-button"><img src="assets/dropdown.png" alt="dropdown button"></button>
-                </div>
-            </div>
+<div class="main-card">
+  <h4>Account summary</h4>
+  <div class="flex-row space-between">
+    <div class="flex-column" style="width: 60%">
+      <h2 id="whole-value">
+        {{wholeNumber}}<span id="decimal-value">.{{ decimal }}</span> {{ currency }}
+      </h2>
+      <br>
+      <div class="flex-row space-between" style="width: 100%">
+        <h4>Account number</h4>
+        <div class="flex-row">
+          <p>{{ displayAccountNumber }}</p>
+          <button (click)="copy(accountNumber)" class="circular-button">
+            <img
+              src="assets/copy-icon.png"
+              alt="copy account number"
+              height="15px"
+            />
+          </button>
+          <button class="circular-button">
+            <img
+              src="assets/share.png"
+              alt="share account number"
+              height="15px"
+            />
+          </button>
         </div>
-        <div class="bottom-column">
-            <p></p>
-            <button id="transfer-button">
-                <img src="assets/transfer.png" alt="transfer button">
-                Transfer
-            </button>
+      </div>
+
+      <div class="flex-row space-between" style="width: 100%">
+        <h4>Account IBAN</h4>
+        <div class="flex-row">
+          <p>{{ currencyChar }}{{ displayAccountNumber }}</p>
+          <button (click)="copy(currencyChar+accountNumber)" class="circular-button">
+            <img
+              src="assets/copy-icon.png"
+              alt="copy account number"
+              height="15px"
+            />
+          </button>
+          <button class="circular-button">
+            <img
+              src="assets/share.png"
+              alt="share account number"
+              height="15px"
+            />
+          </button>
         </div>
+      </div>
+
+      <div class="flex-row" style="margin-top: 40px">
+        <button id="transfer-button">
+          <img src="assets/transfer.png" alt="transfer button" />
+          Transfer
+        </button>
+        <button id="account-statement-button">
+          <img src="assets/accountStatement.png" alt="transfer button" />
+          Account statement
+        </button>
+      </div>
     </div>
-    <div class="container info-row">
-        <div class="row">
-            <div class="col-md-4">
-                <app-account-details-info-card></app-account-details-info-card>
-            </div>
-            <div class="col-md-4">
-                <app-account-details-info-card logoName="investments.png"></app-account-details-info-card>
-            </div>
-            <div class="col-md-4">
-                <app-account-details-info-card logoName="loanAndCredits.png"></app-account-details-info-card>
-            </div>
-        </div>
+    <div class="flex-column" id="column2">
+      <h4>Ledger Balance</h4>
+      <p>{{ ledgerBalance }} {{ currency }}</p>
+      
+      <br />
+      <br />
+      
+      <h4>Blockades</h4>
+      <p>{{ blockades }} {{ currency }}</p>
     </div>
+  </div>
 </div>

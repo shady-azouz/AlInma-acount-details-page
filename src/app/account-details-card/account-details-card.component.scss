@@ -3,7 +3,7 @@
   width: 100%;
   background-color: white;
   border-radius: 16px;
-  padding: 30px;
+  padding: 35px;
   color: #222728;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: row;
 }
 
-#row1 {
+.space-between {
   justify-content: space-between;
 }
 
@@ -31,23 +31,25 @@
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 48px;
   letter-spacing: -0.03em;
   margin: 0;
 }
 
 #decimal-value {
-  font-size: larger;
-  margin: 0;
-  margin-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
 }
 
 h4 {
-  color: #828282;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  letter-spacing: -0.01em;
+  line-height: 22px;
+  color: #71757f;
 }
 
 h3 {
@@ -99,6 +101,40 @@ span {
   padding: 14px 24px;
   gap: 8px;
   color: white;
+  width: 144px;
+  height: 56px;
+}
+
+#transfer-button:hover {
+  background: #295c92;
+}
+
+#transfer-button img {
+  width: 16.2px;
+  height: 16.2px;
+}
+
+#account-statement-button {
+  border: 0;
+  margin-left: 20px;
+  // padding: 18px 24px;
+  // gap: 8px;
+  width: 230px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #e6e7ea;
+  box-shadow: 0px 1px 1px rgba(220, 220, 220, 0.7);
+  border-radius: 12px;
+}
+
+#account-statement-button:hover {
+  background: #e6e7ea;
+}
+
+#account-statement-button img {
+  width: 16.2px;
+  height: 16.2px;
+  transform: translate(0, -3px);
 }
 
 p {
@@ -111,4 +147,28 @@ p {
 
 .col-md-4 {
   margin-top: 20px;
+}
+
+.circular-button {
+  padding: 6px;
+  gap: 8px;
+  width: 28px;
+  height: 28px;
+  background: #eeeff2;
+  border-radius: 100px;
+  border: 0;
+  margin-left: 5px;
+}
+
+.circular-button:hover {
+  background: #bdbec1;
+}
+
+.circular-button img {
+  transform: translate(0, -5px);
+}
+
+
+#column2 {
+  margin-right: 60px;
 }
