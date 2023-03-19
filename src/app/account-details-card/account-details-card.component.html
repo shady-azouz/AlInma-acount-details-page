@@ -1,0 +1,35 @@
+<div class="main-card flex-column">
+    <div class="flex-row" id="row1">
+        <div class="flex-column">
+            <h4>Total balance</h4>
+            <div class="flex-row">
+                <h2 id="whole-value">12,500,500</h2>
+                <h2 id="decimal-value">.33</h2>
+                <div class="currency-card">
+                    <h3>SAR</h3>
+                    <button id="dropdown-button"><img src="assets/dropdown.png" alt="dropdown button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-column">
+            <p></p>
+            <button id="transfer-button">
+                <img src="assets/transfer.png" alt="transfer button">
+                Transfer
+            </button>
+        </div>
+    </div>
+    <div class="container info-row">
+        <div class="row">
+            <div class="col-md-4">
+                <app-account-details-info-card></app-account-details-info-card>
+            </div>
+            <div class="col-md-4">
+                <app-account-details-info-card logoName="investments.png"></app-account-details-info-card>
+            </div>
+            <div class="col-md-4">
+                <app-account-details-info-card logoName="loanAndCredits.png"></app-account-details-info-card>
+            </div>
+        </div>
+    </div>
+</div>

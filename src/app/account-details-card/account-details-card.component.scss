@@ -1,0 +1,114 @@
+.main-card {
+  max-width: 848px;
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  color: #222728;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#row1 {
+  justify-content: space-between;
+}
+
+.bottom-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#whole-value {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+#decimal-value {
+  font-size: larger;
+  margin: 0;
+  margin-top: 16px;
+}
+
+h4 {
+  color: #828282;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #222728;
+}
+
+span {
+  //   display: flex;
+  //   align-items: end;
+  //   padding-bottom: 1px;
+}
+
+.currency-card {
+  margin-left: 10px;
+  border: 1px solid rgba(224, 224, 224, 0.66);
+  box-shadow: 0px 1px 1px rgba(220, 220, 220, 0.7);
+  border-radius: 12px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dropdown-button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+#dropdown-button:hover {
+  background-color: lightgrey;
+}
+
+#transfer-button {
+  border: 0;
+  background: #3f8fe2;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 24px;
+  gap: 8px;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.info-row {
+  margin-top: 30px;
+}
+
+.col-md-4 {
+  margin-top: 20px;
+}
