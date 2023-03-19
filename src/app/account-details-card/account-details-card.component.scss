@@ -168,7 +168,22 @@ p {
   transform: translate(0, -5px);
 }
 
-
 #column2 {
   margin-right: 60px;
+}
+
+#column2 h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #71757f;
+}
+
+#column2 p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #23272f;
 }

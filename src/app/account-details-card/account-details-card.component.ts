@@ -8,12 +8,12 @@ import { Clipboard } from '@angular/cdk/clipboard';
 })
 export class AccountDetailsCardComponent {
   @Input() width: string = '300';
-  @Input() accountBalance: string = '12500500';
+  @Input() accountBalance: string = '12500500.389';
   @Input() accountNumber: string = '07102045800000150201568310';
   @Input() currency: string = 'SAR';
   @Input() currencyChar: string = 'SA';
-  @Input() ledgerBalance: string = '15200500.32';
-  @Input() blockades: string = '-1000000.32';
+  @Input() ledgerBalance: string = '15200500.326';
+  @Input() blockades: string = '-1000000.326';
   displayAccountNumber = '';
   wholeNumber: string = '';
   decimal: string = '';
